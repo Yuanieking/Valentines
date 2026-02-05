@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: -100px;
+  text-align: center;
+}
+body {
+  position: relative;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+}
+h1 {
+  padding-left: 480px;
+
+  font-family: "Pacifico", cursive;
+  font-size: 48px;
+  color: #e63946;
+}
+h2 {
+  padding: 50px;
+
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  font-size: 48px;
+  color: #e63946;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #e63946;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#y {
+  margin-left: 600px;
+}
+
+#n {
+  position: absolute;
+  left: calc(50% + 100px);
+  top: 400px;
+  transform: none;
+}
+#y:hover {
+  background-color: rgb(53, 169, 43);
+}
+#n:hover {
+  background-color: rgb(53, 169, 43);
+}
+
+/* Make the link inside the #y button white and remove underline */
+#y a {
+  color: #fff;
+  text-decoration: none;
+}

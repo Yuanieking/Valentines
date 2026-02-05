@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="valentine.css" />
+  </head>
+  <body>
+    <div class="card">
+      <img src="gift.gif" alt="Gift Box" />
+    </div>
+
+    <h1>Will You Be My Valentine?</h1>
+    <p>(e click ang text)</p>
+    <button id="y"><a href="yes.html">Yes</a></button>
+    <button id="n">No</button>
+    <script>
+      (function () {
+        const nBtn = document.getElementById("n");
+        function moveButtonRandomly() {
+          const btnRect = nBtn.getBoundingClientRect();
+          const vw = window.innerWidth;
+          const vh = window.innerHeight;
+          const maxX = Math.max(0, vw - btnRect.width);
+          const maxY = Math.max(0, vh - btnRect.height);
+          const x = Math.floor(Math.random() * maxX);
+          const y = Math.floor(Math.random() * maxY);
+          nBtn.style.position = "absolute";
+          nBtn.style.left = x + "px";
+          nBtn.style.top = y + "px";
+        }
+        nBtn.addEventListener("click", moveButtonRandomly);
+      })();
+    </script>
+  </body>
+</html>
